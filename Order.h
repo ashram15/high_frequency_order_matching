@@ -1,6 +1,4 @@
 #pragma once
-// ^ This tells the compiler: "Only look at this file once."
-
 #include <string>
 #include <iostream>
 #include <ctime>

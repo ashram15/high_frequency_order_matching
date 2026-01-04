@@ -1,6 +1,6 @@
 #include "OrderBook.h"
 #include <iostream>
-#include <algorithm> // For std::min
+#include <algorithm>
 
 using namespace std;
 

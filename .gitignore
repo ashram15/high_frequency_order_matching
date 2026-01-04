@@ -1,7 +1,34 @@
+# Compiled C++ binaries
+matching-engine
+matching-server
 *.o
+*.out
 *.exe
-*.log
+
+# Build directories
 /build/
-.vscode
+/bin/
+/obj/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
-`
+Thumbs.db
+
+# Logs
+*.log
