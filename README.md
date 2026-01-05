@@ -49,7 +49,7 @@ When a buyer's price ≥ seller's price, orders are matched and executed at the 
 g++ -std=c++11 main.cpp OrderBook.cpp -o matching-engine
 
 # Or use the existing binary if available
-./matching-server
+./matching-engine
 ```
 
 ### 2. Start the Server
