@@ -1,6 +1,6 @@
 # High-Frequency Order Matching Engine
 
-A low-latency, TCP-based order matching engine built in C++ with Python tools for testing and visualization. This project implements a limit order book with price-time priority matching, designed to handle high-frequency trading scenarios.
+A low-latency order matching engine built in C++ with Python tools for testing and visualization. This project implements a limit order book with price-time priority matching, designed to handle high-frequency trading scenarios.
 
 ![Demo](assets/HFOM_demo.gif)
 
@@ -25,11 +25,11 @@ A low-latency, TCP-based order matching engine built in C++ with Python tools fo
 
 ### Matching Algorithm
 
-The engine uses two sorted maps for optimal matching:
+The engine uses two sorted maps for optimal matching (best bid and best ask):
 - **Bids (Buy Orders)**: Sorted high → low (most aggressive buyer first)
 - **Asks (Sell Orders)**: Sorted low → high (cheapest seller first)
 
-When a buyer's price ≥ seller's price, orders are matched and executed at the seller's price (standard market rules).
+When a buyer's offer price ≥ seller's requested price, orders are matched and executed at the seller's price (standard market rules). 
 
 ## Prerequisites
 
